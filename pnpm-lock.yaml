@@ -8,12 +8,6 @@ importers:
 
   .:
     dependencies:
-      classnames:
-        specifier: ^2.5.1
-        version: 2.5.1
-      material-icons:
-        specifier: ^1.13.12
-        version: 1.13.12
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -78,7 +72,7 @@ importers:
       globals:
         specifier: ^15.9.0
         version: 15.9.0
-      sass-embedded:
+      sass:
         specifier: ^1.78.0
         version: 1.78.0
       scss:
@@ -1159,9 +1153,6 @@ packages:
       '@chromatic-com/playwright':
         optional: true
 
-  classnames@2.5.1:
-    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
-
   color-convert@1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
 
@@ -1756,9 +1747,6 @@ packages:
     engines: {node: '>= 10'}
     peerDependencies:
       react: '>= 0.14.0'
-
-  material-icons@1.13.12:
-    resolution: {integrity: sha512-/2YoaB79IjUK2B2JB+vIXXYGtBfHb/XG66LvoKVM5ykHW7yfrV5SP6d7KLX6iijY6/G9GqwgtPQ/sbhFnOURVA==}
 
   media-typer@0.3.0:
     resolution: {integrity: sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==}
@@ -2689,7 +2677,8 @@ snapshots:
 
   '@base2/pretty-print-object@1.0.1': {}
 
-  '@bufbuild/protobuf@1.10.0': {}
+  '@bufbuild/protobuf@1.10.0':
+    optional: true
 
   '@chromatic-com/storybook@1.9.0(react@18.3.1)':
     dependencies:
@@ -3605,7 +3594,6 @@ snapshots:
     dependencies:
       normalize-path: 3.0.0
       picomatch: 2.3.1
-    optional: true
 
   argparse@2.0.1: {}
 
@@ -3631,8 +3619,7 @@ snapshots:
 
   balanced-match@1.0.2: {}
 
-  binary-extensions@2.3.0:
-    optional: true
+  binary-extensions@2.3.0: {}
 
   body-parser@1.20.3:
     dependencies:
@@ -3673,7 +3660,8 @@ snapshots:
       node-releases: 2.0.18
       update-browserslist-db: 1.1.0(browserslist@4.23.3)
 
-  buffer-builder@0.2.0: {}
+  buffer-builder@0.2.0:
+    optional: true
 
   buffer-from@1.1.2:
     optional: true
@@ -3729,11 +3717,8 @@ snapshots:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.3
-    optional: true
 
   chromatic@11.10.1: {}
-
-  classnames@2.5.1: {}
 
   color-convert@1.9.3:
     dependencies:
@@ -4238,7 +4223,6 @@ snapshots:
   is-binary-path@2.1.0:
     dependencies:
       binary-extensions: 2.3.0
-    optional: true
 
   is-callable@1.2.7: {}
 
@@ -4343,8 +4327,6 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  material-icons@1.13.12: {}
-
   media-typer@0.3.0: {}
 
   memoizerific@1.11.3:
@@ -4394,8 +4376,7 @@ snapshots:
 
   node-releases@2.0.18: {}
 
-  normalize-path@3.0.0:
-    optional: true
+  normalize-path@3.0.0: {}
 
   object-assign@4.1.1: {}
 
@@ -4584,7 +4565,6 @@ snapshots:
   readdirp@3.6.0:
     dependencies:
       picomatch: 2.3.1
-    optional: true
 
   recast@0.23.9:
     dependencies:
@@ -4659,6 +4639,7 @@ snapshots:
   rxjs@7.8.1:
     dependencies:
       tslib: 2.7.0
+    optional: true
 
   safe-buffer@5.2.1: {}
 
@@ -4753,13 +4734,13 @@ snapshots:
       sass-embedded-win32-arm64: 1.78.0
       sass-embedded-win32-ia32: 1.78.0
       sass-embedded-win32-x64: 1.78.0
+    optional: true
 
   sass@1.78.0:
     dependencies:
       chokidar: 3.6.0
       immutable: 4.3.7
       source-map-js: 1.2.1
-    optional: true
 
   scheduler@0.23.2:
     dependencies:
@@ -4879,6 +4860,7 @@ snapshots:
   supports-color@8.1.1:
     dependencies:
       has-flag: 4.0.0
+    optional: true
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
@@ -5013,7 +4995,8 @@ snapshots:
 
   uuid@9.0.1: {}
 
-  varint@6.0.0: {}
+  varint@6.0.0:
+    optional: true
 
   vary@1.1.2: {}
 
