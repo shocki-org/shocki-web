@@ -1,0 +1,45 @@
+@import "./_mixins.scss";
+@import "./_variables.scss";
+@import "./_fonts.scss";
+
+* {
+  font-family: inherit;
+}
+
+body,
+html {
+  font-family: "Wanted Sans Variable", "Wanted Sans", -apple-system,
+    BlinkMacSystemFont, system-ui, "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled,
+input:disabled {
+  cursor: not-allowed;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  min-width: 0;
+  display: inline-flex;
+}

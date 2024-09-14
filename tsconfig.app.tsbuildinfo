@@ -1,0 +1,1 @@
+{"root":["./src/main.tsx","./src/vite-env.d.ts","./src/components/input/input.stories.tsx","./src/components/input/input.tsx","./src/components/materialicon/materialicon.stories.tsx","./src/components/materialicon/materialicon.tsx","./src/pages/index.tsx","./src/providers/routerprovider.tsx","./src/utils/style.ts"],"version":"5.6.2"}

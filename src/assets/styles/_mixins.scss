@@ -1,0 +1,46 @@
+@mixin font-default {
+  line-height: 150%;
+  text-decoration: none;
+  letter-spacing: normal;
+  font-weight: 500;
+}
+
+@mixin font-caption-default {
+  @include font-default;
+  font-size: 14px;
+}
+
+@mixin font-caption-accent {
+  @include font-caption-default;
+  font-weight: 600;
+}
+
+@mixin font-body-default {
+  @include font-default;
+  font-size: 16px;
+}
+
+@mixin font-body-accent {
+  @include font-body-default;
+  font-weight: 600;
+}
+
+@mixin font-heading-default {
+  @include font-default;
+  font-size: 20px;
+}
+
+@mixin font-heading-accent {
+  @include font-heading-default;
+  font-weight: 600;
+}
+
+@mixin font-display-default {
+  @include font-default;
+  font-size: 28px;
+}
+
+@mixin font-display-accent {
+  @include font-display-default;
+  font-weight: 600;
+}
