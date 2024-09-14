@@ -1,9 +1,12 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import RouterProvider from "./providers/RouterProvider";
+import RouterProvider from "./shared/providers/RouterProvider";
+import FontProvider from "./shared/providers/FontProvider";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider />
+    <FontProvider>
+      <RouterProvider />
+    </FontProvider>
   </StrictMode>
 );
