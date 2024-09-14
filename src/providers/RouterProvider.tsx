@@ -2,7 +2,7 @@ import {
   RouterProvider as CustomRouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
-import IndexPage from "../pages";
+import IndexPage from "../pages/Index";
 
 const router = createBrowserRouter([
   {
