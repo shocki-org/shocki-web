@@ -19,6 +19,7 @@ const IndexPage = () => {
         <Input
           label="비밀번호"
           placeholder="비밀번호를 입력해주세요"
+          visibility
           state={[password, setPassword]}
         />
 

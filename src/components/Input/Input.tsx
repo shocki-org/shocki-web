@@ -33,7 +33,7 @@ const Input = (props: Props) => {
         />
 
         {props.visibility && (
-          <button onClick={toggleVisibility}>
+          <button type="button" onClick={toggleVisibility}>
             <MaterialIcon>
               {visibility ? "visibility_off" : "visibility"}
             </MaterialIcon>
