@@ -26,7 +26,7 @@ const Input = (props: Props) => {
 
       <div className={styles.inputWrapper}>
         <input
-          type={visibility ? "text" : "password"}
+          type={!visibility && props.visibility ? "password" : "text"}
           placeholder={props.placeholder}
           value={value}
           onChange={handleChange}
