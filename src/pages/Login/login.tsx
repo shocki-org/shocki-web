@@ -9,6 +9,19 @@ const LoginPage = () => {
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
 
+  const navigate = useNavigate();
+
+  const handleLogin = useCallback(() => {
+    login(phone, password)
+      .then(() => {
+        navigate("/");
+      })
+      .catch(() => {
+        alert("로그인 실패");
+      });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [password, phone]);
+
   return (
     <div className={styles["login-container"]}>
       <form className={styles.form}>
