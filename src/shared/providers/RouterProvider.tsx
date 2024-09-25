@@ -5,6 +5,7 @@ import {
   createBrowserRouter,
 } from "react-router-dom";
 import PrivateRouter from "../routers/PrivateRouter";
+import PrivacyPage from "@/pages/Privacy/privacy";
 
 const queryClient = new QueryClient();
 
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
   {
     element: <LoginPage />,
     path: "/login",
+  },
+  {
+    element: <PrivacyPage />,
+    path: "/privacy",
   },
   {
     element: <PrivateRouter />,
