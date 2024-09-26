@@ -1,25 +1,62 @@
-.privacy-container {
-  padding: 20px;
+.privacy-wrapper {
+  width: 100%;
+  padding: 40px 0;
 
-  h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    padding: 20px 0;
   }
 
-  p {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
+  .privacy-content {
+    max-width: 800px;
+    width: 90%;
 
-  a {
-    color: #007bff;
-  }
+    .privacy-banner {
+      width: 100%;
+      height: 200px;
+      background-color: #34CA94;
+      margin-bottom: 30px;
+      border-radius: 10px;
 
-  ul {
-    margin-left: 20px;
-  }
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-  li {
-    margin-bottom: 10px;
+      img {
+        width: 30%;
+      }
+
+      @media screen and (max-width: 768px) {
+        height: 150px;
+        margin-bottom: 20px;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #007bff;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
   }
 }
